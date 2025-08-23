@@ -10,6 +10,7 @@
 
 # Project binary
 version-bumper
+dist
 
 # Test binary, built with `go test -c`
 *.test
