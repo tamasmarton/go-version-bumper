@@ -1,8 +1,5 @@
 name: Release
 
-env:
-  GITHUB_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
-
 on:
   push:
     tags:
@@ -31,4 +28,4 @@ jobs:
           version: latest
           args: release --clean
         env:
-          GITHUB_TOKEN: $GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
