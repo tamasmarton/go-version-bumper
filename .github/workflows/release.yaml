@@ -1,5 +1,8 @@
 name: Release
 
+env:
+  GITHUB_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+
 on:
   push:
     tags:
