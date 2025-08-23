@@ -19,6 +19,10 @@ archives:
 
 brews:
   - name: version-bumper
+    repository:
+      owner: tamasmarton
+      name: homebrew-tap
+      branch: main
     commit_author:
       name: goreleaserbot
       email: bot@goreleaser.com
@@ -29,6 +33,6 @@ brews:
 release:
   github:
     owner: tamasmarton
-    name: go-version-bumper"
+    name: go-version-bumper
   draft: false
   prerelease: ""
